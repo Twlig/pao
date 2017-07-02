@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="add.css">
+  <script type="text/javascript" src="flex.js"></script>
+  <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+</head>
+
+<body>
+  <div class="headline">
+    <a class="back" href="login.html">
+      <img src="img/white.png"></a>
+    <span>发起约跑
+        </span>
+  </div>
+  <div class="content">
+    <div class="require">
+      <span class="word">ADD SOMETHING</span>
+    </div>
+    <form name="form" method="post" action="">
+      <div class="require">
+        <span class="word">性别</span>
+        <label for="man" class="check checked">
+          <input class="sex" id="man" type="radio" name="re_sex" value="男" />男</label>
+        <label for="woman" class="check checked">
+          <input class="sex" id="woman" type="radio" name="re_sex" value="女" />女
+        </label>
+      </div>
+      <div class="require">
+        <span class="word">约跑数量</span>
+        <label class="check checked">
+          <input class="num" id="one" type="radio" name="re_num" value="1" />1
+        </label>
+        <label class="check checked">
+          <input id="two" class="num" type="radio" name="re_num" value="2" />2
+        </label>
+        <label class="check checked">
+          <input id="three" class="num" type="radio" name="re_num" value="3" />3
+        </label>
+      </div>
+      <div class="require">
+        <span class="word">约跑地点</span>
+        <label class="check checked">
+          <input id="xiuxian" class="addr" type="radio" name="addr" value="休闲" />休闲
+        </label>
+        <label class="check checked">
+          <input id="tianjian" class="addr" type="radio" name="addr" value="天健"/>天健
+        </label>
+      </div>
+      <div class="require">
+        <span class="word">约跑时间</span>
+        <input id="date" class="text" type="text" name="data
+        " placeholder="请输入约跑时间" required/>
+      </div>
+      <div class="require">
+        <span class="word">约跑时长</span>
+        <input id="time" class="text" type="text" name="time" placeholder="请输入约跑时长" required/>
+      </div>
+      <div class="require">
+        <span class="word">需求细则</span>
+        <input id="details" class="text" type="text" name="re_details" placeholder="选填" />
+      </div>
+      <div class="choose">
+        <a href="index2.html" class="no">取消</a>
+        <span id="yes">提交</span>
+      </div>
+    </form>
+  </div>
+  <div class="foot">
+    <a id="appointment" href="#">
+      <img src="img/约跑图标白色@2x.png">
+      <span>约跑</span>
+    </a>
+    <a id="person" href="index3.html">
+      <img src="img/个人图标灰色@2x.png">
+      <span>个人</span>
+    </a>
+    <a id="achievement" href="index4.html">
+      <img src="img/成就图标灰色@2x.png">
+      <span>成就</span>
+    </a>
+  </div>
+  <div id="alertMessage"></div>
+</body>
+<script type="text/javascript" src="add.js"></script>
+
+</html>
